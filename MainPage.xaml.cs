@@ -32,7 +32,6 @@ namespace Aez
         public void Btn_Send_Click(object sender, RoutedEventArgs e)
         {
 
-        }
-        //private void setIniSize()
+        }       
     }
 }

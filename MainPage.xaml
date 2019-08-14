@@ -42,7 +42,7 @@
                         <FontIcon Glyph="&#xE720;" FontFamily="Segoe MDL2 Assets"/>
                     </AppBarButton.Icon>
                 </AppBarButton>
-                <TextBox Margin="10,10" Height="40" Width="390"  x:Name="Tb_Answer"  VerticalAlignment="Top" RenderTransformOrigin="0.592,0.575" />
+                <TextBox Margin="10,10" Height="40" Width="400"  x:Name="Tb_Answer"  VerticalAlignment="Top" RenderTransformOrigin="0.592,0.575" />
                 <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
                 <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
             </StackPanel>
