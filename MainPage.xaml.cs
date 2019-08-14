@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Xaml.Media.Imaging;
+
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -25,16 +27,71 @@ namespace Aez
     
     public sealed partial class MainPage : Page
     {
-        
 
+        public bool isCat = true;
         public MainPage()   
         {
             this.InitializeComponent();
         }
         public void Btn_Send_Click(object sender, RoutedEventArgs e)
         {
+            string inputAni = Tb_Answer.Text;
+            
+            if (isCat)
+            {
+                if (inputAni == "cat")
+                {
+                    OutPutText.Text = "恭喜您答对了";
+                }
+                else
+                {
+                    OutPutText.Text = "您答错了，上张是猫，这张是什么？";
+                }
+            }
+            else
+            {
+                if(inputAni == "dog")
+                {
+                    OutPutText.Text = "恭喜您答对了";
+                }
+                else
+                {
+                    OutPutText.Text = "您答错了，上张是狗，这张是什么？";                   
+                }
+            }
 
-        }       
+            Random rd = new Random();
+            int x = rd.Next();
+            isCat = (x % 5 ==0);
+            
+            if (!isCat)
+            {
+                BitmapImage bi3 = new BitmapImage();
+                bi3.UriSource = new Uri("ms-appx:Assets/dog2.jpg");
+                AniType.Source = bi3;
+            }
+            else
+            {
+                BitmapImage bi3 = new BitmapImage();
+                bi3.UriSource = new Uri("ms-appx:Assets/cat1.jpg");
+                AniType.Source = bi3;
+            }
+        }
+
+        private void NvSample_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NvSample_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
+        {
+
+        }
+
+        private void NvSample_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+
+        }
     }
 
     //to confirm that using microphone is permitted
