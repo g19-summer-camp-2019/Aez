@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml.Media.Imaging;
+using Aez.Views;
 
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
@@ -90,7 +91,27 @@ namespace Aez
 
         private void NvSample_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
-
+            if (args.IsSettingsInvoked == true)
+            {
+                contentFrame.Navigate(typeof(SettingsPage), args.RecommendedNavigationTransitionInfo);
+            }
+            //    else if (args.InvokedItemContainer != null)
+            //     {
+            //        var navItemTag = args.InvokedItemContainer.Tag.ToString();
+            //        contentFrame.Navigate(typeof(navItemTag), args.RecommendedNavigationTransitionInfo);
+            //     }
+            else
+            {
+                TextBlock ItemContent = args.InvokedItem as TextBlock;
+                switch (ItemContent.Tag)
+                {
+                    case "SP2":
+                        {
+                            contentFrame.Navigate(typeof(SamplePage2));
+                        }
+                        break;
+                }
+            }
         }
     }
 

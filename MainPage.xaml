@@ -18,44 +18,47 @@
                     ItemInvoked="NvSample_ItemInvoked">
         <NavigationView.MenuItems>
             <NavigationViewItem Content="Recognition" Tag="Recog_page" />
-            <NavigationViewItem Content="else2" Tag="SamplePage2" />
+            <NavigationViewItem Tag="SamplePage2" x:Name="SamplePage2">
+                <TextBlock Tag="SP2">SP2</TextBlock>
+            </NavigationViewItem>
             <NavigationViewItem Content="Music" Tag="SamplePage3" />
             <NavigationViewItem Content="ConnectPeople" Tag="SamplePage4" />
         </NavigationView.MenuItems>
-        
-
+        <Frame x:Name="contentFrame">
 
             <Grid Margin="-10,0,10,1" Height="1001" Width="600" VerticalAlignment="Bottom">
-            <Grid.Background>
-                <ImageBrush ImageSource="Assets/XiaoBing_FifthGen.jpeg" Stretch="Uniform">
-                </ImageBrush>
-            </Grid.Background>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            
-            <TextBlock Text="猫狗认知训练游戏" Grid.Row="2" FontSize="24" FontWeight="Bold" Foreground="CadetBlue" HorizontalAlignment="Center"/>
-            <TextBlock Text="今天也是个好日子呢" Grid.Row="2" FontSize="24" FontWeight="Black" Foreground="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Name="OutPutText"/>
-            <Image Source="Assets/cat1.jpg" Grid.Row="1" x:Name="AniType"/>
-            
+                <Grid.Background>
+                    <ImageBrush ImageSource="Assets/XiaoBing_FifthGen.jpeg" Stretch="Uniform">
+                    </ImageBrush>
+                </Grid.Background>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
-            <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-                <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
-                <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
-                <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
-                <AppBarButton x:Name="Btn_Send" Click="Btn_Send_Click" FontSize="7" Background="{x:Null}">
-                    <AppBarButton.Icon>
-                        <FontIcon Glyph="&#xE720;" FontFamily="Segoe MDL2 Assets"/>
-                    </AppBarButton.Icon>
-                </AppBarButton>
-                <TextBox  Margin="10,10" Height="40" Width="400"  x:Name="Tb_Answer"  VerticalAlignment="Top" RenderTransformOrigin="0.592,0.575" />
-                <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
-                <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
-            </StackPanel>
-        </Grid>
+                <TextBlock Text="猫狗认知训练游戏" Grid.Row="2" FontSize="24" FontWeight="Bold" Foreground="CadetBlue" HorizontalAlignment="Center"/>
+                <TextBlock Text="今天也是个好日子呢" Grid.Row="2" FontSize="24" FontWeight="Black" Foreground="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Name="OutPutText"/>
+                <Image Source="Assets/cat1.jpg" Grid.Row="1" x:Name="AniType"/>
+
+
+                <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
+                    <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
+                    <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
+                    <AppBarButton x:Name="Btn_Send" Click="Btn_Send_Click" FontSize="7" Background="{x:Null}">
+                        <AppBarButton.Icon>
+                            <FontIcon Glyph="&#xE720;" FontFamily="Segoe MDL2 Assets"/>
+                        </AppBarButton.Icon>
+                    </AppBarButton>
+                    <TextBox  Margin="10,10" Height="40" Width="400"  x:Name="Tb_Answer"  VerticalAlignment="Top" RenderTransformOrigin="0.592,0.575" />
+                    <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
+                    <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
+                </StackPanel>
+            </Grid>
+        </Frame>
     </NavigationView>
+    
 </Page>
