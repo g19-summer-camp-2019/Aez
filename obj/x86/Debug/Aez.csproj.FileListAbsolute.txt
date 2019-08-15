@@ -63,3 +63,8 @@ C:\Users\LeoSh\source\repos\Aez\Aez\obj\x86\Debug\Views\SamplePage4.xaml
 C:\Users\LeoSh\source\repos\Aez\Aez\obj\x86\Debug\Views\SamplePage2.xbf
 C:\Users\LeoSh\source\repos\Aez\Aez\obj\x86\Debug\Views\SamplePage3.xbf
 C:\Users\LeoSh\source\repos\Aez\Aez\obj\x86\Debug\Views\SamplePage4.xbf
+C:\Users\LeoSh\source\repos\Aez\Aez\bin\x86\Debug\Views\Recog_page.xbf
+C:\Users\LeoSh\source\repos\Aez\Aez\obj\x86\Debug\Views\Recog_page.g.i.cs
+C:\Users\LeoSh\source\repos\Aez\Aez\obj\x86\Debug\Views\Recog_page.g.cs
+C:\Users\LeoSh\source\repos\Aez\Aez\obj\x86\Debug\Views\Recog_page.xaml
+C:\Users\LeoSh\source\repos\Aez\Aez\obj\x86\Debug\Views\Recog_page.xbf

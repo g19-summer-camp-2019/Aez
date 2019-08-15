@@ -1,0 +1,44 @@
+﻿<Page
+    Height="900"
+    Width="600"
+    x:Class="Aez.Views.Recog_page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Aez.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+  
+        <Grid Margin="-10,0,10,1" Height="1001" Width="600" VerticalAlignment="Bottom">
+            <Grid.Background>
+                <ImageBrush ImageSource="Assets/XiaoBing_FifthGen.jpeg" Stretch="Uniform">
+                </ImageBrush>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="猫狗认知训练游戏" Grid.Row="2" FontSize="24" FontWeight="Bold" Foreground="CadetBlue" HorizontalAlignment="Center"/>
+            <TextBlock Text="今天也是个好日子呢" Grid.Row="2" FontSize="24" FontWeight="Black" Foreground="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Name="OutPutText"/>
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+            <Image Source="Assets/cat1.jpg"  x:Name="AniType"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                
+                <AppBarButton x:Name="Btn_Send" Click="Btn_Send_Click" FontSize="7" Background="{x:Null}">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="&#xE720;" FontFamily="Segoe MDL2 Assets"/>
+                    </AppBarButton.Icon>
+                </AppBarButton>
+                <TextBox  Margin="10,10" Height="40" Width="400"  x:Name="Tb_Answer"  VerticalAlignment="Top" RenderTransformOrigin="0.592,0.575" />
+                
+            </StackPanel>
+        </Grid>
+   
+</Page>

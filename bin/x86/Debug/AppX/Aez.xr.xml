@@ -20,8 +20,8 @@
       <RootEvent Name="ItemInvoked" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItem">
-      <RootProperty Name="Content" />
       <RootProperty Name="Tag" />
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Tag" />
@@ -82,6 +82,7 @@
       <RootProperty Name="FontFamily" />
     </RootType>
     <RootType FullName="Aez.MainPage" />
+    <RootType FullName="Aez.Views.Recog_page" />
     <RootType FullName="Aez.Views.SamplePage2" />
     <RootType FullName="Aez.Views.SamplePage3" />
     <RootType FullName="Aez.Views.SamplePage4" />

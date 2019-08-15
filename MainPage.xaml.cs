@@ -29,11 +29,12 @@ namespace Aez
     public sealed partial class MainPage : Page
     {
 
-        public bool isCat = true;
+        
         public MainPage()   
         {
             this.InitializeComponent();
         }
+        public bool isCat = true;
         public void Btn_Send_Click(object sender, RoutedEventArgs e)
         {
             string inputAni = Tb_Answer.Text;
@@ -105,11 +106,32 @@ namespace Aez
                 TextBlock ItemContent = args.InvokedItem as TextBlock;
                 switch (ItemContent.Tag)
                 {
+                    case "Recog_page":
+                        {
+                            contentFrame.Navigate(typeof(Recog_page));
+                        }
+                        break;
                     case "SP2":
                         {
                             contentFrame.Navigate(typeof(SamplePage2));
                         }
                         break;
+                    case "SP3":
+                        {
+                            contentFrame.Navigate(typeof(SamplePage3));
+                        }
+                        break;
+                    case "SP4":
+                        {
+                            contentFrame.Navigate(typeof(SamplePage4));
+                        }
+                        break;
+                    default:
+                        {
+                            contentFrame.Navigate(typeof(MainPage));
+                        }
+                        break;
+                    
                 }
             }
         }

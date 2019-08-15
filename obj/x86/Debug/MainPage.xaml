@@ -17,12 +17,23 @@
                                                                  
                                                       >
         <NavigationView.MenuItems>
-            <NavigationViewItem Content="Recognition" Tag="Recog_page" />
-            <NavigationViewItem x:ConnectionId='3' Tag="SamplePage2" x:Name="SamplePage2">
-                <TextBlock Tag="SP2">SP2</TextBlock>
+            
+            <NavigationViewItem  Tag="Recog_page" >
+                <TextBlock Tag="Recog_page">Recognition</TextBlock>
             </NavigationViewItem>
-            <NavigationViewItem Content="Music" Tag="SamplePage3" />
-            <NavigationViewItem Content="ConnectPeople" Tag="SamplePage4" />
+            
+            <NavigationViewItem x:ConnectionId='3' Tag="SamplePage2" x:Name="SamplePage2">
+                <TextBlock Tag="SP2">QA</TextBlock>
+            </NavigationViewItem>
+
+            <NavigationViewItem  Tag="SamplePage3">
+                <TextBlock Tag="SP3">Music</TextBlock>
+            </NavigationViewItem>
+
+            <NavigationViewItem Tag="SamplePage4">
+                <TextBlock Tag="SP4">ConnectPeople</TextBlock>
+            </NavigationViewItem>
+            
         </NavigationView.MenuItems>
         <Frame x:ConnectionId='4' x:Name="contentFrame">
 
@@ -55,7 +66,7 @@
                     </AppBarButton>
                     <TextBox x:ConnectionId='8'  Margin="10,10" Height="40" Width="400"  x:Name="Tb_Answer"  VerticalAlignment="Top" RenderTransformOrigin="0.592,0.575" />
                     <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
-                    <!--<TextBlock Text="跟小D说说话吧" SelectionChanged="TextBlock_SelectionChanged"/>-->
+                    
                 </StackPanel>
             </Grid>
         </Frame>
