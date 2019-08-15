@@ -5,11 +5,27 @@
     xmlns:local="using:Aez.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush ImageSource="/Assets/ToTalk.jpg" Stretch="Uniform" />
+    </Page.Background>
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Text="这里是语言发音教学" FontSize="32" FontFamily="Bold" HorizontalAlignment="Center" Height="120" Grid.Row="0"/>
 
+        <StackPanel Grid.Row="1">
+            
+            <TextBox Text="吃" FontSize="70" FontWeight="Black" HorizontalAlignment="Center" />
+            <TextBlock Text="您的分数:" FontSize="24" FontWeight="Bold" Foreground="Aqua" HorizontalAlignment="Center" FontFamily="Segoe UI" Margin="0,50,0,0"/>
+            <TextBlock x:ConnectionId='2' Text="0" x:Name="scoreText" FontSize="24" FontWeight='Bold' HorizontalAlignment="Center"/>
+            <Button x:ConnectionId='3' Content ="开始说" FontSize="32" FontWeight="Bold" x:Name="SpeechBu"                        HorizontalAlignment="Center" Opacity="100"/>
+        </StackPanel>
     </Grid>
 </Page>
 

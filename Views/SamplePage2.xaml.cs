@@ -26,5 +26,23 @@ namespace Aez.Views
         {
             this.InitializeComponent();
         }
+
+        public bool isToSay = true;
+        private void SpeechBu_Click(object sender, RoutedEventArgs e)
+        {
+            if (isToSay)
+            {              
+                SpeechBu.Content = "我说完了";              
+                isToSay = false;               
+            }
+            else
+            {
+                Random rd = new Random();
+                int socre = rd.Next(100);
+                scoreText.Text = socre.ToString();
+                SpeechBu.Content = "开始说";
+                isToSay = true;
+            }
+        }
     }
 }

@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\cat1.jpg" />
+    <Content Include="Assets\children.jpg" />
     <Content Include="Assets\dog2.jpg" />
     <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png" />
     <Content Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png" />
@@ -165,6 +166,7 @@
     <Content Include="Assets\Square44x44Logo.targetsize-256.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-32.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Assets\ToTalk.jpg" />
     <Content Include="Assets\xiaobing.jpg" />
     <Content Include="Assets\XiaoBing_FifthGen.jpeg" />
     <Content Include="Properties\Default.rd.xml" />

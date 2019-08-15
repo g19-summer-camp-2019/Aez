@@ -1,5 +1,6 @@
 WinMetadata\Windows.winmd
 Assets\cat1.jpg
+Assets\children.jpg
 Assets\dog2.jpg
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
@@ -25,6 +26,7 @@ Assets\Square44x44Logo.targetsize-256.png
 Assets\Square44x44Logo.targetsize-32.png
 Assets\Square44x44Logo.targetsize-48.png
 Assets\StoreLogo.png
+Assets\ToTalk.jpg
 Assets\Wide310x150Logo.scale-200.png
 Assets\xiaobing.jpg
 Assets\XiaoBing_FifthGen.jpeg
